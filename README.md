@@ -38,12 +38,14 @@ Esta API RESTful foi desenvolvida para possibilitar a criação, gerenciamento e
   "id": 10,
   "nome": "Tarmogoyf",
   "tipo": "Criatura",
+  "descricao": "A força de Tarmogoyf é igual ao número de tipos de card no cemitério.",
   "cor": "Verde",
   "custoMana": "1G",
-  "descricao": "A força de Tarmogoyf é igual ao número de tipos de card no cemitério.",
-  "colecao": "Modern Masters",
-  "preco": 25.00
+  "quantidade": 4,
+  "dataCriacao": "2025-04-10"
 }
+```
+
 3.2. **DeckDTO**
 ```json
 {
@@ -51,19 +53,27 @@ Esta API RESTful foi desenvolvida para possibilitar a criação, gerenciamento e
   "nome": "Golgari Midrange",
   "formato": "Modern",
   "descricao": "Deck com foco em valor incremental e remoções.",
-  "idUsuario": 12,
   "cartas": [
     {
       "id": 10,
       "nome": "Tarmogoyf",
       "tipo": "Criatura",
+      "descricao": "A força de Tarmogoyf é igual ao número de tipos de card no cemitério.",
       "cor": "Verde",
       "custoMana": "1G",
-      "quantidade": 4
+      "quantidade": 2,
+      "dataCriacao": "2025-04-10"
+    }
+  ],
+  "comentarios": [
+    {
+      "id": 1,
+      "conteudo": "Deck excelente para o meta atual!"
     }
   ],
   "dataCriacao": "2025-04-10"
 }
+```
 
 3.3. **UsuarioDTO**
 ```json
@@ -72,14 +82,26 @@ Esta API RESTful foi desenvolvida para possibilitar a criação, gerenciamento e
   "nome": "Maria Silva",
   "email": "maria@email.com",
   "senha": "********",
-  "dataCadastro": "2025-04-01"
+  "dataCadastro": "2025-04-01",
+  "cartas": [
+    {
+      "id": 10,
+      "nome": "Tarmogoyf",
+      "tipo": "Criatura",
+      "cor": "Verde",
+      "custoMana": "1G",
+      "quantidade": 2
+    }
+  ],
+  "decks": [
+    {
+      "id": 1,
+      "nome": "Golgari Midrange",
+      "formato": "Modern",
+      "descricao": "Deck com foco em valor incremental e remoções.",
+      "dataCriacao": "2025-04-10"
+    }
+  ]
 }
-3.4. **ComentarioDTO**
-```json
-{
-  "id": 301,
-  "deckId": 1,
-  "usuarioId": 12,
-  "conteudo": "Deck excelente para o meta atual!",
-  "dataComentario": "2025-04-10"
-}
+```
+
