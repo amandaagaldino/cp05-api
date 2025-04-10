@@ -30,3 +30,56 @@ Esta API RESTful foi desenvolvida para possibilitar a criação, gerenciamento e
 |19| POST   | /decks/{id}/comentarios   | Adicionar comentário ao deck   | 201, 400, 404, 500  |
 |20| GET    | /decks/{id}/comentarios    | Listar comentários de um deck    | 200, 404, 500       |
 
+## 3. DTOs e Modelos de Dados
+
+3.1. **CartaDTO**
+```json
+{
+  "id": 10,
+  "nome": "Tarmogoyf",
+  "tipo": "Criatura",
+  "cor": "Verde",
+  "custoMana": "1G",
+  "descricao": "A força de Tarmogoyf é igual ao número de tipos de card no cemitério.",
+  "colecao": "Modern Masters",
+  "preco": 25.00
+}
+3.2. **DeckDTO**
+```json
+{
+  "id": 1,
+  "nome": "Golgari Midrange",
+  "formato": "Modern",
+  "descricao": "Deck com foco em valor incremental e remoções.",
+  "idUsuario": 12,
+  "cartas": [
+    {
+      "id": 10,
+      "nome": "Tarmogoyf",
+      "tipo": "Criatura",
+      "cor": "Verde",
+      "custoMana": "1G",
+      "quantidade": 4
+    }
+  ],
+  "dataCriacao": "2025-04-10"
+}
+
+3.3. **UsuarioDTO**
+```json
+{
+  "id": 12,
+  "nome": "Maria Silva",
+  "email": "maria@email.com",
+  "senha": "********",
+  "dataCadastro": "2025-04-01"
+}
+3.4. **ComentarioDTO**
+```json
+{
+  "id": 301,
+  "deckId": 1,
+  "usuarioId": 12,
+  "conteudo": "Deck excelente para o meta atual!",
+  "dataComentario": "2025-04-10"
+}
