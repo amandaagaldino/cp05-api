@@ -2,7 +2,7 @@
 
 ## 1. Introdução
 
-Esta API RESTful foi desenvolvida para possibilitar a criação, gerenciamento e compartilhamento de decks do jogo Magic: The Gathering (MTG). Inspirada na plataforma [Archidekt](https://archidekt.com), ela fornece endpoints para manipular decks, cartas, usuários e comentários, com suporte a múltiplos formatos e categorias.
+Esta API RESTful foi desenvolvida para possibilitar a criação, gerenciamento e compartilhamento de decks do jogo Magic: The Gathering (MTG). Inspirada em plataformas como [Moxfield](https://moxfield.com) e [Archidekt](https://archidekt.com), ela fornece endpoints para manipular decks, cartas, usuários e comentários, com suporte a múltiplos formatos e categorias.
 
 ## 2. Rotas da API
 | Nº | Método | Rota                     | Descrição                       | Status Codes |
